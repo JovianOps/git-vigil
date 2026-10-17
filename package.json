@@ -1,0 +1,68 @@
+{
+  "name": "git-vigil",
+  "displayName": "Git Vigil — a vigil for the people who write the software",
+  "description": "Opens a full-screen reading of your repository's history: the hours you kept, the nights you lost, the people who went quiet.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other", "Visualization"],
+  "keywords": ["git", "history", "insights", "visualization"],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:gitVigil.open",
+    "onCommand:gitVigil.openForFile"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitVigil.open",
+        "category": "Git Vigil",
+        "title": "Keep the vigil"
+      },
+      {
+        "command": "gitVigil.openForFile",
+        "category": "Git Vigil",
+        "title": "Keep the vigil for this folder"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        { "command": "gitVigil.openForFile", "when": "false" }
+      ],
+      "explorer/context": [
+        { "command": "gitVigil.openForFile", "group": "navigation@99" }
+      ]
+    },
+    "configuration": {
+      "title": "Git Vigil",
+      "properties": {
+        "gitVigil.maxCommits": {
+          "type": "number",
+          "default": 60000,
+          "description": "Maximum commits read from history."
+        },
+        "gitVigil.statCommits": {
+          "type": "number",
+          "default": 6000,
+          "description": "How many recent commits to diff for added/removed line counts. Keep this small; git spends roughly 35 seconds per 60000 commits on diffing."
+        },
+        "gitVigil.includeAllBranches": {
+          "type": "boolean",
+          "default": true,
+          "description": "Read every reachable branch instead of only the current one."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "preview": "node preview/build.js",
+    "test": "node --test tests/",
+    "vscode:prepublish": "echo no build step"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0"
+  }
+}

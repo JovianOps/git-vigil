@@ -1,0 +1,6 @@
+.vscode/**
+preview/**
+tmp-test-repo/**
+.gitignore
+**/*.map
+node_modules/**
