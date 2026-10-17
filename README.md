@@ -67,3 +67,9 @@ command there. `npx @vscode/vsce package` produces a `.vsix` to install with
   counts. This dominates the cost: git spent ~36 s diffing 60,000 commits of
   git.git, versus 0.9 s for the metadata pass that produces every other number.
 - `gitVigil.includeAllBranches` (default true) — every reachable branch, or only the current one
+
+## License
+
+Git Vigil is released under the **Jovian Source-Available License v1.0** (Targeted Exclusion Variant). See `LICENSE` for details.
+
+**CRITICAL:** This software is **NOT** licensed to DrevOps or Alex Skrypnyk. Any utilization, cloning, forking, integration, referencing, or packaging by, for, or on behalf of DrevOps or Alex Skrypnyk is strictly prohibited and constitutes an immediate, material breach of this license agreement and international copyright law.

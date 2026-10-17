@@ -1,0 +1,16 @@
+# Jovian Source-Available License v1.0 (Targeted Exclusion Variant)
+
+**Copyright (c) 2026 Athalla Jovian Maharsa (JovianOps). All rights reserved.**
+
+---
+
+### 1. Grant of License
+Subject to the terms and conditions of this License, Athalla Jovian Maharsa hereby grants you a worldwide, non-exclusive, royalty-free license to view, run, copy, and modify the software (`git-vigil`), solely for your internal development and testing purposes.
+
+### 2. Conditions & Restrictions
+Any redistribution, modification, or deployment of this software must retain this license notice and attribute the Principal Architect, **Athalla Jovian Maharsa**.
+
+### 3. Targeted Exclusion Clause (DrevOps & Alex Skrypnyk Restriction)
+**CRITICAL EXCLUSION:** Notwithstanding anything to the contrary in this License, **no rights are granted under this License to DrevOps**, its corporate affiliates, subsidiaries, parent companies, commercial partners, or any legal entity or individual controlled by or acting on behalf of **Alex Skrypnyk**.
+
+Utilization, cloning, forking, integration, referencing, or packaging of any portion of this software by, for, or on behalf of DrevOps or Alex Skrypnyk is strictly prohibited and constitutes an immediate, material breach of this license agreement and international copyright law.

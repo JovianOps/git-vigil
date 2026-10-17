@@ -4,7 +4,7 @@
   "description": "Opens a full-screen reading of your repository's history: the hours you kept, the nights you lost, the people who went quiet.",
   "version": "0.1.0",
   "publisher": "local",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.80.0"
   },
